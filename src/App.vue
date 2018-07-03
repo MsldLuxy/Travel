@@ -1,8 +1,10 @@
 <!--整个应用的根组件-->
 <template>
   <div id="app">
-    <!--显示的是当前路由地址所对应的内容-->
-    <router-view/>
+    <keep-alive>
+      <!--显示的是当前路由地址所对应的内容-->
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 
