@@ -7,6 +7,7 @@ import router from './router'
 
 // 解决click点击有300ms延迟的问题
 import fastClick from 'fastclick'
+import store from './store'
 
 import 'styles/reset.css'
 // 解决1像素的问题
@@ -22,6 +23,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router: router,
+  store,
   components: { App: App },
   template: '<App/>'
 })
