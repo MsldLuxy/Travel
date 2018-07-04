@@ -19,7 +19,9 @@ import { mapState } from 'vuex'
 
 export default {
   name: 'Home',
+  //HomeHeader实现组件的异步加载
   components: {
+//    HomeHeader: () => import('./components/Header'),
     HomeHeader,
     HomeSwiper,
     HomeIcons,
