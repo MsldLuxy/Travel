@@ -9,7 +9,6 @@
       </router-link>
       景点详情
     </div>
-    <div class="content"></div>
   </div>
 </template>
 
@@ -64,6 +63,7 @@ export default {
       font-size: .4rem
       color: #fff
   .header-fixed
+    z-index: 2
     position: fixed
     top: 0
     left: 0
@@ -82,6 +82,5 @@ export default {
       font-size: .4rem
       text-align: center
       color: #fff
-  .content
-    height: 50rem
+
 </style>
