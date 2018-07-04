@@ -26,6 +26,7 @@ export default {
   },
   methods: {
     handleScroll () {
+      console.log(1)
       const top = document.documentElement.scrollTop
       if (top > 0) {
         let opacity = top / 120
@@ -39,6 +40,10 @@ export default {
   },
   activated () {
     window.addEventListener('scroll', this.handleScroll)
+  },
+//  页面即将隐藏，或者页面即将被替换成新的页面时执行
+  deactivated () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
