@@ -1,10 +1,11 @@
 <template>
   <ul class="list">
+    <!--加.prevent是为了去掉默认行为  不要滑动字母表时页面也会动-->
     <li class="item"
         v-for="item of letters"
         :key="item"
         @click="handleLetterClick"
-        @touchstart="handleTouchStart"
+        @touchstart.prevent="handleTouchStart"
         @touchmove="handleTouchMove"
         @touchend="handleTouchEnd"
         :ref="item"
